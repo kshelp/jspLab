@@ -1,10 +1,11 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%
-	String name = request.getParameter("name");
-	String value = request.getParameter("value");
+	String name = request.getParameter("name");   // "이름"
+	String value = request.getParameter("value"); // "홍길동"
 	
 	if (name != null && value != null) {
-		application.setAttribute(name, value);
+		application.setAttribute("name", name);  // name = "이름"
+		application.setAttribute("value", value);  // value = "홍길동"
 	}
 %>
 
@@ -15,7 +16,7 @@
 	if (name != null && value != null) {
 %>
 application 기본 객체의 속성 설정:
- <%= name %> = <%= value %>
+ <%= application.getAttribute("name") %> = <%= application.getAttribute("value") %>
 <%
 	} else {
 %>

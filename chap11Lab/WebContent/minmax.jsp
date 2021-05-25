@@ -12,6 +12,7 @@ ${ vals.stream().min().get() }
         new Member("유관순", 19), new Member("왕건", 42) );
     request.setAttribute("members", memberList);
 %>
+
 ${ maxAgeMemOpt = members.stream().max((m1, m2) -> m1.age.compareTo(m2.age)) ; ''}
 ${ maxAgeMemOpt.get().name } (${maxAgeMemOpt.get().age}세)
 </body>
