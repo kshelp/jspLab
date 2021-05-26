@@ -26,11 +26,10 @@ public class GetMessageListService {
 		Connection conn = null;
 		int currentPageNumber = pageNumber;
 		try {
-			// 커넥션풀에서 커넥션을 가져온다.
 			conn = ConnectionProvider.getConnection();
 			MessageDao messageDao = MessageDao.getInstance();
 
-			int messageTotalCount = messageDao.selectCount(conn);  // 10
+			int messageTotalCount = messageDao.selectCount(conn);
 
 			List<Message> messageList = null;
 			int firstRow = 0;
