@@ -111,6 +111,7 @@
 		<url-pattern>/article/write.do</url-pattern>
 		<url-pattern>/article/modify.do</url-pattern> -->
 		<url-pattern>/main/*</url-pattern>
+		<url-pattern>/board/*</url-pattern>
 	</filter-mapping>
 	
 	
