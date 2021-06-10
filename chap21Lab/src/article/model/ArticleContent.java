@@ -2,8 +2,8 @@ package article.model;
 
 public class ArticleContent {
 
-	private Integer number;
-	private String content;
+	private Integer number;  // 18
+	private String content;  // aa
 
 	public ArticleContent(Integer number, String content) {
 		this.number = number;

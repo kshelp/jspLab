@@ -16,8 +16,8 @@ public class ReadArticleHandler implements CommandHandler {
 	@Override
 	public String process(HttpServletRequest req, HttpServletResponse res) 
 			throws Exception {
-		String noVal = req.getParameter("no");
-		int articleNum = Integer.parseInt(noVal);
+		String noVal = req.getParameter("no");  // "15"
+		int articleNum = Integer.parseInt(noVal);  // 15, "String" -> int 변환
 		try {
 			ArticleData articleData = readService.getArticle(articleNum, true);
 			req.setAttribute("articleData", articleData);

@@ -17,6 +17,12 @@ import mvc.command.CommandHandler;
 import mvc.command.NullHandler;
 
 public class ControllerUsingURI extends HttpServlet {
+	
+	// 1. url에 매칭된 Handler 객체를 찾는다. 
+	//    예) /article/read.do  -> article.command.ReadArticleHandler 객체
+	// 2. 그 Handler.process() 메소드를 실행한다.
+	// 3. 반환된 jsp 화면으로 forwarding 한다.
+	
 
     // <커맨드, 핸들러인스턴스> 매핑 정보 저장
     private Map<String, CommandHandler> commandHandlerMap = 

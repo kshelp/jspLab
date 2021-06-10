@@ -10,8 +10,12 @@ import article.model.ArticleContent;
 import jdbc.connection.ConnectionProvider;
 
 public class ReadArticleService {
+	// 클래스의 구성멤버
+	// 1. 필드
+	// 2. 생성자
+	// 3. 메소드
 
-	private ArticleDao articleDao = new ArticleDao();
+	private ArticleDao articleDao = new ArticleDao();  // 필드
 	private ArticleContentDao contentDao = new ArticleContentDao();
 	
 	public ArticleData getArticle(int articleNum, boolean increaseReadCount) {

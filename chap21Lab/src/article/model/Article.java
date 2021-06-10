@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Article {
 
-	private Integer number;
-	private Writer writer;
-	private String title;
-	private Date regDate;
-	private Date modifiedDate;
-	private int readCount;
+	private Integer number;  // 18
+	private Writer writer;  // Writer 객체
+	private String title; // "aa"
+	private Date regDate;  // Date 객체
+	private Date modifiedDate;  // Date 객체
+	private int readCount; //0
 
 	public Article(Integer number, Writer writer, String title, 
 			Date regDate, Date modifiedDate, int readCount) {

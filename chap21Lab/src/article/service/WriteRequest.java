@@ -6,9 +6,9 @@ import article.model.Writer;
 
 public class WriteRequest {
 
-	private Writer writer;
-	private String title;
-	private String content;
+	private Writer writer;  // id="jk@naver.com", name="김종국"
+	private String title;   // aa
+	private String content;  // aa
 
 	public WriteRequest(Writer writer, String title, String content) {
 		this.writer = writer;
